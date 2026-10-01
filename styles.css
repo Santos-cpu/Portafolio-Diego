@@ -1,9 +1,37 @@
 /* =========================================
-   CONFIGURACIÓN GLOBAL
+   CONFIGURACIÓN GLOBAL Y FONDOS
    ========================================= */
 body { 
-    background-color: #111113; 
-    color: #ededed; 
+    background-color: #e0e9e3 !important; /* Tu color elegido para el modo claro */
+    color: #2b3137 !important; 
+}
+
+.dark body {
+    background-color: #0b0f0d !important; /* Tu tono Matrix sutil */
+    color: #ededed !important;
+}
+
+/* =========================================
+   TARJETAS ESTILO APPLE
+   ========================================= */
+.apple-card {
+    background-color: #e8efec;
+    border: 1px solid #e2e8f0;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05), 0 3px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.dark .apple-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .apple-card {
+        padding: 1.25rem;
+    }
 }
 
 /* =========================================
@@ -15,9 +43,12 @@ body {
     padding: 0.45rem 1rem; 
     border-radius: 9999px; 
     background-color: rgba(48, 164, 108, 0.15); 
-    color: #4de676; 
+    color: #166534; 
     font-size: 1rem; 
     font-weight: 500;
+}
+.dark .badge-tech {
+    color: #4de676; 
 }
 .badge-tech i {
     margin-right: 0.5rem; 
@@ -29,10 +60,14 @@ body {
     align-items: center; 
     padding: 0.35rem 0.9rem; 
     border-radius: 9999px; 
-    background-color: #212124; 
-    color: #a1a1aa; 
+    background-color: #f1f5f9;
+    color: #475569; 
     font-size: 0.95rem; 
     font-weight: 500;
+}
+.dark .badge-tech-gray {
+    background-color: #212124; 
+    color: #a1a1aa; 
 }
 .badge-tech-gray i {
     margin-right: 0.5rem;
@@ -48,9 +83,12 @@ body {
     padding: 0.25rem 0.8rem; 
     border-radius: 9999px; 
     background-color: rgba(48, 164, 108, 0.15); 
-    color: #4de676; 
+    color: #166534; 
     font-size: 0.85rem; 
     font-weight: 500;
+}
+.dark .badge-date {
+    color: #4de676;
 }
 
 /* =========================================
@@ -62,16 +100,19 @@ body {
     flex-shrink: 0; 
     border-radius: 0.75rem; 
     background-color: rgba(48, 164, 108, 0.15); 
-    color: #4de676; 
+    color: #166534; 
     display: flex;
     align-items: center; 
     justify-content: center; 
     position: relative;
 }
+.dark .icon-box {
+    color: #4de676;
+}
 
 .btn-solid { 
     background-color: #30A46C; 
-    color: #fff; 
+    color: #fff !important; 
     padding: 0.6rem 1.25rem; 
     border-radius: 9999px; 
     display: inline-flex; 
@@ -85,21 +126,6 @@ body {
     opacity: 0.8; 
 }
 
-.btn-solid-icon {
-    background-color: #30A46C; 
-    color: #fff; 
-    width: 2.75rem;
-    height: 2.75rem;
-    border-radius: 9999px; 
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center;
-    transition: opacity 0.2s; 
-}
-.btn-solid-icon:hover {
-    opacity: 0.8;
-}
-
 .btn-outline { 
     display: inline-flex; 
     align-items: center; 
@@ -109,13 +135,24 @@ body {
     border-radius: 9999px; 
     background-color: rgba(48, 164, 108, 0.05); 
     border: 1px solid rgba(48, 164, 108, 0.3); 
-    color: #4de676; 
-    transition: background-color 0.2s; 
+    color: #166534; 
+}
+.dark .btn-outline {
+    color: #4de676;
 }
 .btn-outline:hover { 
     background-color: rgba(48, 164, 108, 0.15); 
 }
 
-body {
-    background-color: #070c09 !important;
+/* Animación de transición de vistas moderna */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+    z-index: 1;
+}
+::view-transition-new(root) {
+    z-index: 9999;
 }
