@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Santos Fernández | Portafolio</title>
+    <meta name="description" content="Portafolio profesional de Diego Santos Fernández, desarrollador de software.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        surface: '#111113',
+                        surfaceHover: '#1c1c1f'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased min-h-screen py-16 px-6 md:px-8">
+    <main class="max-w-[900px] mx-auto space-y-16">
+        
+        <!-- HEADER -->
+        <header class="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
+            <img src="assets/avatar.jpg" alt="Avatar de Diego" class="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover">
+            <div class="space-y-3">
+                <h1 class="text-4xl md:text-5xl font-bold">Diego Santos Fernández</h1>
+                <h2 class="text-xl md:text-2xl text-gray-200">Programador Full Stack Junior</h2>
+                <div class="flex items-center gap-2 text-gray-400 text-base">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i> Ciudad Real, España
+                </div>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="mailto:sanfer.diego0@gmail.com" class="btn-solid"><i data-lucide="mail" class="w-5 h-5"></i> sanfer.diego0@gmail.com</a>
+                    <a href="assets/data/cv.pdf" class="btn-outline" target="_blank" title="Descargar CV"><i data-lucide="file-text" class="w-5 h-5"></i></a>
+                    <a href="https://github.com/Santos-cpu?tab=repositories" class="btn-outline" target="_blank" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/diego-santos-fernandez-0aab80283/" class="btn-outline" target="_blank" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- SOBRE MÍ -->
+        <section class="space-y-4">
+            <h2 class="text-2xl md:text-3xl font-bold">Sobre mí</h2>
+            <p class="text-gray-300 leading-relaxed text-base md:text-lg">
+                Estudiante de Ingeniería Informática y DAM. Me apasiona el desarrollo de software y dar vida a mis propios proyectos, desde PWAs hasta asistentes de voz con IA. Cuando no estoy programando, me encontrarás trasteando con el hardware de mi PC, jugando un rato o desconectando de ruta por la naturaleza.
+            </p>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- TECNOLOGÍAS -->
+        <section class="space-y-5">
+            <h2 class="text-2xl md:text-3xl font-bold">Tecnologías</h2>
+            <div class="flex flex-wrap gap-3 md:gap-4">
+                <span class="badge-tech"><i class="devicon-python-plain"></i> Python</span>
+                <span class="badge-tech"><i class="devicon-java-plain"></i> Java</span>
+                <span class="badge-tech"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                <span class="badge-tech"><i class="devicon-html5-plain"></i> HTML/CSS</span>
+                <span class="badge-tech"><i class="devicon-mysql-plain"></i> SQL</span>
+                <span class="badge-tech"><i class="devicon-firebase-plain"></i> Firebase</span>
+                <span class="badge-tech"><i class="devicon-git-plain"></i> Git</span>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold">Experiencia</h2>
+            
+            <div class="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="cpu" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        <h3 class="text-lg md:text-xl font-bold">EBORATIC (UCLM)</h3>
+                        <span class="badge-date mt-2 sm:mt-0 w-fit">Ene 2022 - Sep 2025</span>
+                    </div>
+                    <h4 class="text-gray-300 text-base mt-1">Gestión Web y Redes Sociales</h4>
+                    <p class="text-gray-400 text-base mt-2">Mantenimiento de cuentas de redes sociales y contenido del sitio web para la Facultad de Ciencias Sociales en el campus de Talavera de la Reina.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="briefcase" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        <h3 class="text-lg md:text-xl font-bold">Minsait / Indra</h3>
+                        <span class="badge-date mt-2 sm:mt-0 w-fit">Jul 2022 - Ago 2022</span>
+                    </div>
+                    <h4 class="text-gray-300 text-base mt-1">Control de Calidad y Base de Datos</h4>
+                    <p class="text-gray-400 text-base mt-2">Gestión de bases de datos y control de calidad sobre el material electoral para las elecciones generales de Angola 2022.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="monitor" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        <h3 class="text-lg md:text-xl font-bold">Universidad de Castilla-La Mancha</h3>
+                        <span class="badge-date mt-2 sm:mt-0 w-fit">Ene 2021 - Dic 2021</span>
+                    </div>
+                    <h4 class="text-gray-300 text-base mt-1">Prácticas en Servicio IT</h4>
+                    <p class="text-gray-400 text-base mt-2">Soporte directo a usuarios, control de redes y reparación de hardware en las instalaciones de la universidad.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PROYECTOS -->
+        <section class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold">Proyectos</h2>
+            
+            <div class="flex flex-col sm:flex-row gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="home" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-lg md:text-xl font-bold">Roomy (PWA)</h3>
+                    <h4 class="text-gray-300 text-base mt-1">Gestión de pisos compartidos</h4>
+                    <p class="text-gray-400 text-base mt-2">PWA desarrollada para coordinar gastos, organizar tareas de limpieza y gestionar listas de la compra entre compañeros de piso.</p>
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span class="badge-tech-gray"><i class="devicon-html5-plain"></i> HTML/CSS</span>
+                        <span class="badge-tech-gray"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="badge-tech-gray"><i class="devicon-firebase-plain"></i> Firebase</span>
+                        <span class="badge-tech-gray"><i class="devicon-vercel-plain"></i> Vercel</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://piso-web.vercel.app" class="btn-outline" target="_blank" title="Enlace al proyecto"><i data-lucide="link" class="w-5 h-5"></i></a>
+                        <a href="https://github.com/Santos-cpu/Roomy" class="btn-outline" target="_blank" title="Código en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-64 md:w-72 shrink-0 mt-4 sm:mt-0">
+                    <img src="assets/roomy.jpg" class="w-full h-40 md:h-48 object-cover rounded-2xl border border-gray-800">
+                </div>
+            </div>
+
+            <!-- PLANTILLA DE NUEVO PROYECTO -->
+            <div class="flex flex-col sm:flex-row gap-6 w-full mt-8">
+                
+                <!-- Icono principal del proyecto (cuadrado verde) -->
+                <div class="icon-box">
+                    <!-- Puedes cambiar 'folder' por otro icono de Lucide (ej: 'smartphone', 'code', 'database') -->
+                    <i data-lucide="layout" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                
+                <!-- Contenido de texto -->
+                <div class="flex-1">
+                    <h3 class="text-lg md:text-xl font-bold">Javier Medina Logopeda</h3>
+                    <h4 class="text-gray-300 text-base mt-1">Web corporativa para profesional clínico</h4>
+                    <p class="text-gray-400 text-base mt-2">Diseño y desarrollo de una plataforma accesible y responsive. Incluye catálogo estructurado de servicios, blog dinámico y un sistema optimizado para la captación directa de pacientes.</p>
+                    
+                    <!-- Tecnologías usadas en este proyecto (Insignias grises) -->
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span class="badge-tech-gray"><i class="devicon-html5-plain"></i> HTML/CSS</span>
+                        <span class="badge-tech-gray"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                        <span class="badge-tech-gray"><i class="devicon-php-plain"></i> PHP</span>
+                        <span class="badge-tech-gray"><i class="devicon-wordpress-plain"></i> WordPress</span>
+                        <!-- Pega aquí más insignias grises de tecnología -->
+                    </div>
+                    
+                    <!-- Enlaces (GitHub, Web, etc.) -->
+                    <div class="flex gap-3">
+                        <a href="https://www.javiermedina-logopeda.com" class="btn-outline" target="_blank" title="Enlace web">
+                            <i data-lucide="link" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/Santos-cpu/javiermedina-logopeda" class="btn-outline" target="_blank" title="Código en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Imagen del proyecto -->
+                <div class="w-full sm:w-64 md:w-72 shrink-0 mt-4 sm:mt-0">
+                    <!-- Acuérdate de guardar la imagen en la carpeta assets/ con el nombre correcto -->
+                    <img src="assets/weblogopeda.jpg" class="w-full h-40 md:h-48 object-cover rounded-2xl border border-gray-800">
+                </div>
+            </div>
+
+                <div class="flex flex-col sm:flex-row gap-6 w-full mt-8">
+                <div class="icon-box">
+                    <i data-lucide="music" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                
+                <div class="flex-1">
+                    <h3 class="text-lg md:text-xl font-bold">FriendFy</h3>
+                    <h4 class="text-gray-300 text-base mt-1">Plataforma de streaming musical compartida</h4>
+                    <p class="text-gray-400 text-base mt-2">Aplicación web orientada a la gestión y reproducción de música. Cuenta con un reproductor integrado, buscador en tiempo real y una interfaz fluida inspirada en los líderes del sector para ofrecer la mejor experiencia de usuario.</p>
+                    
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span class="badge-tech-gray"><i class="devicon-python-plain"></i> Python</span>
+                        <span class="badge-tech-gray"><i class="devicon-java-plain"></i> Java</span>
+                        <span class="badge-tech-gray"><i class="devicon-firebase-plain"></i> Firebase</span>
+                        <span class="badge-tech-gray"></i> Telegram API</span>
+                        <span class="badge-tech-gray"></i> Gemini API</span>
+                        <span class="badge-tech-gray"></i> Retrofit</span>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <a href="https://github.com/Santos-cpu/FriendFy" class="btn-outline" target="_blank" title="Código en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="w-full sm:w-64 md:w-72 shrink-0 mt-4 sm:mt-0">
+                    <!-- Acuérdate de añadir la imagen en tu carpeta de assets -->
+                    <img src="assets/friendfy.jpg" class="w-full h-40 md:h-48 object-cover rounded-2xl border border-gray-800" alt="Captura del proyecto FriendFy">
+                </div>
+            </div>
+
+            <!-- PLANTILLA DE NUEVO PROYECTO -->
+            <div class="flex flex-col sm:flex-row gap-6 w-full mt-8">
+                
+                <!-- Icono principal del proyecto (cuadrado verde) -->
+                <div class="icon-box">
+                    <!-- Puedes cambiar 'folder' por otro icono de Lucide (ej: 'smartphone', 'code', 'database') -->
+                    <i data-lucide="pencil" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                
+                <!-- Contenido de texto -->
+                <div class="flex-1">
+                    <h3 class="text-lg md:text-xl font-bold">EasyTest</h3>
+                    <h4 class="text-gray-300 text-base mt-1">Aplicación web de ayuda al estudio</h4>
+                    <p class="text-gray-400 text-base mt-2">Generador de tests automatizado que extrae datos de archivos PDF utilizando una arquitectura serverless con Python y JavaScript.</p>
+                    
+                    <!-- Tecnologías usadas en este proyecto (Insignias grises) -->
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span class="badge-tech-gray"><i class="devicon-java-plain"></i> Java</span>
+                        <span class="badge-tech-gray"><i class="devicon-firebase-plain"></i> Firebase</span>
+                        <span class="badge-tech-gray"><i class="devicon-vercel-plain"></i> Vercel</span>
+                        <span class="badge-tech-gray"></i> Gemini API</span>
+                        <!-- Pega aquí más insignias grises de tecnología -->
+                    </div>
+                    
+                    <!-- Enlaces (GitHub, Web, etc.) -->
+                    <div class="flex gap-3">
+                        <a href="https://easy-test-app.vercel.app" class="btn-outline" target="_blank" title="Enlace web">
+                            <i data-lucide="link" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/Santos-cpu/EasyTest" class="btn-outline" target="_blank" title="Código en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Imagen del proyecto -->
+                <div class="w-full sm:w-64 md:w-72 shrink-0 mt-4 sm:mt-0">
+                    <!-- Acuérdate de guardar la imagen en la carpeta assets/ con el nombre correcto -->
+                    <img src="assets/easytest.jpg" class="w-full h-40 md:h-48 object-cover rounded-2xl border border-gray-800">
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="bot" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-lg md:text-xl font-bold">Asistente de Voz "Jarvis"</h3>
+                    <h4 class="text-gray-300 text-base mt-1">Automatización de escritorio</h4>
+                    <p class="text-gray-400 text-base mt-2">Script personalizado de escritorio que utiliza reconocimiento de voz y modelos de lenguaje locales para automatizar atajos de navegador y flujos de estudio.</p>
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span class="badge-tech-gray"><i class="devicon-python-plain"></i> Python</span>
+                        <span class="badge-tech-gray">IA Local</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/Santos-cpu/Jarvis" class="btn-outline" target="_blank" title="Código en GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-64 md:w-72 shrink-0 mt-4 sm:mt-0">
+                    <img src="assets/jarvis.jpg" class="w-full h-40 md:h-48 object-cover rounded-2xl border border-gray-800">
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN -->
+        <section class="space-y-8">
+            <h2 class="text-2xl md:text-3xl font-bold">Formación</h2>
+            
+            <div class="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="laptop" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        <h3 class="text-lg md:text-xl font-bold">Ingeniería Informática</h3>
+                        <span class="badge-date mt-2 sm:mt-0 w-fit">En curso</span>
+                    </div>
+                    <h4 class="text-gray-300 text-base mt-1">UCLM</h4>
+                    <p class="text-gray-400 text-base mt-2">Estudios de grado en Ingeniería Informática.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
+                <div class="icon-box">
+                    <i data-lucide="smartphone" class="w-6 h-6 md:w-7 md:h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        <h3 class="text-lg md:text-xl font-bold">Desarrollo de Aplicaciones Multiplataforma</h3>
+                        <span class="badge-date mt-2 sm:mt-0 w-fit">En curso</span>
+                    </div>
+                    <h4 class="text-gray-300 text-base mt-1">Grado Superior (DAM)</h4>
+                    <p class="text-gray-400 text-base mt-2">Especialización en desarrollo de software para múltiples dispositivos e interfaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTRAS (Aficiones) -->
+        <section class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-bold">Extra</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="block bg-surface border border-gray-800 rounded-3xl hover:bg-surfaceHover transition duration-300 overflow-hidden">
+                    <img src="assets/vivac.jpg" class="w-full h-40 md:h-48 object-cover border-b border-gray-800">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">Naturaleza y Vivac</h3>
+                        <p class="text-gray-400 text-sm md:text-base mt-2">Desarrollador de día y entusiasta del vivac de noche; siempre que puedo me escapo a acampar y disfrutar de la naturaleza para desconectar.</p>
+                    </div>
+                </div>
+                <div class="block bg-surface border border-gray-800 rounded-3xl hover:bg-surfaceHover transition duration-300 overflow-hidden">
+                    <img src="assets/hardware.jpg" class="w-full h-40 md:h-48 object-cover border-b border-gray-800">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">Hardware & Modding</h3>
+                        <p class="text-gray-400 text-sm md:text-base mt-2">Mantenimiento de equipos, cambio de metal líquido, limpieza de componentes y mecánica básica.</p>
+                    </div>
+                </div>
+                <div class="block bg-surface border border-gray-800 rounded-3xl hover:bg-surfaceHover transition duration-300 overflow-hidden">
+                    <img src="assets/play.jpg" class="w-full h-40 md:h-48 object-cover border-b border-gray-800">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">Gaming</h3>
+                        <p class="text-gray-400 text-sm md:text-base mt-2">Jugador habitual en PC y PS5 (Destiny 2, God of War, InFamous, Warhammer Space Marine 2...)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- FOOTER -->
+        <footer class="flex flex-col gap-5 text-gray-400 pb-8 text-base md:text-lg">
+            <span>Diego Santos Fernández</span>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:sanfer.diego0@gmail.com" class="btn-solid w-fit"><i data-lucide="mail" class="w-5 h-5"></i> sanfer.diego0@gmail.com</a>
+                <div class="flex gap-4">
+                    <a href="assets/data/cv.pdf" class="btn-outline" target="_blank" title="Descargar CV"><i data-lucide="file-text" class="w-5 h-5"></i></a>
+                    <a href="https://github.com/Santos-cpu?tab=repositories" class="btn-outline" target="_blank" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/diego-santos-fernandez-0aab80283/" class="btn-outline" target="_blank" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
