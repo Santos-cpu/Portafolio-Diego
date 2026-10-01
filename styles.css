@@ -12,10 +12,22 @@ body {
 }
 
 /* =========================================
+   EFECTO DE TRANSICIÓN CIRCULAR (View Transitions)
+   ========================================= */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+::view-transition-new(root) {
+    z-index: 9999;
+}
+
+/* =========================================
    TARJETAS ESTILO APPLE
    ========================================= */
 .apple-card {
-    background-color: #e8efec;
+    background-color: #eff3f1;
     border: 1px solid #e2e8f0;
     border-radius: 1.5rem;
     padding: 2rem;
@@ -142,17 +154,4 @@ body {
 }
 .btn-outline:hover { 
     background-color: rgba(48, 164, 108, 0.15); 
-}
-
-/* Animación de transición de vistas moderna */
-::view-transition-old(root),
-::view-transition-new(root) {
-    animation: none;
-    mix-blend-mode: normal;
-}
-::view-transition-old(root) {
-    z-index: 1;
-}
-::view-transition-new(root) {
-    z-index: 9999;
 }
